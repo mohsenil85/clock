@@ -1,0 +1,50 @@
+@charset 'utf-8';
+* {
+	font: bold 7pt;
+/*	text-align: center; */
+	font-family: monospace;
+	background: black;
+	color: #33ff33;
+}
+
+h1{
+	
+	font: bold 7pt;
+}
+#titlebar{
+  width: 650px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+#clockblock{
+border-spacing: 10px;
+  width: 450px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+#clock {
+
+border-spacing: 10px;
+	/*font: bold 7pt sans; */
+	color: red;
+	background: black;
+	padding: 10px;
+	border: solid #33ff33 5px;
+	border-radius: 10px;
+
+}
+
+#colon {
+	text-decoration: blink;
+}
+#colon2 {
+	text-decoration: blink;
+}
+/*
+#clock{
+	text-align: left;
+	float: left;
+}
+*/
