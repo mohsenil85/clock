@@ -3,7 +3,7 @@
 	font: bold 6pt;
 	font-family: monospace; 
 	background: #16161D;
-	color: #33ff33;
+	color: #4BDB3D;
 }
 
 #titlebar{
@@ -23,7 +23,6 @@
 #clock {
 
 	border-spacing: 10px;
-	color: red;
 	background: #16161D;
 	padding: 10px;
 	border-radius: 10px;
@@ -31,5 +30,6 @@
 }
 
 #colon, #colon2 {
+	color:red;
 	text-decoration: blink;
 }
