@@ -8,7 +8,7 @@ digits.six = "eeee <br>8&nbsp;&nbsp;8 <br>8 <br>8eeee <br>8&nbsp;&nbsp;&nbsp;8 <
 digits.seven = "eeeee <br>8&nbsp;&nbsp;&nbsp;8 <br>&nbsp;&nbsp;&nbsp;e&rsquo; <br>&nbsp;&nbsp;e&rsquo; <br>&nbsp;&nbsp;8 <br>&nbsp;&nbsp;8  ";
 digits.eight = "&nbsp;eeeee <br>&nbsp;8&nbsp;&nbsp;&nbsp;8 <br>&nbsp;8eee8 <br>88&nbsp;&nbsp;&nbsp;88 <br>88&nbsp;&nbsp;&nbsp;88 <br>88eee88";
 digits.nine = "eeeee <br>8&nbsp;&nbsp;&nbsp;8 <br>8eee8 <br>&nbsp;&nbsp;&nbsp;88 <br>&nbsp;&nbsp;&nbsp;88 <br>&nbsp;&nbsp;&nbsp;88";
-digits.zero = "&nbsp;eeeee <br>&nbsp;8&nbsp;&nbsp;e8 <br>&nbsp;8&nbsp;&nbsp;&nbsp;8 <br>&nbsp;8&nbsp;&nbsp;&nbsp;8 <br>88&nbsp;&nbsp;&nbsp;88 <br>88eee88";
+digits.zero = "&nbsp;eeeee <br>&nbsp;8&nbsp;&nbsp;08 <br>&nbsp;8&nbsp;&nbsp;&nbsp;8 <br>&nbsp;8&nbsp;&nbsp;&nbsp;8 <br>88&nbsp;&nbsp;&nbsp;88 <br>88eee88";
 digits.colon = "<br><br>88<br><br>88";
 
 function showDigits(x) {
