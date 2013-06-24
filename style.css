@@ -1,7 +1,7 @@
 @charset 'utf-8';
 * {
 	font: bold 7pt;
-/*	text-align: center; */
+	text-align: center; 
 	font-family: monospace;
 	background: black;
 	color: #33ff33;
