@@ -1,13 +1,13 @@
 var digits = new Object();
-digits.one = "88<br />&nbsp;8<br />&nbsp;8<br />&nbsp;8<br />8888<br />8888";
-digits.two = "eeee<br>&nbsp;&nbsp;&nbsp;8<br>&nbsp;&nbsp;&nbsp;8 <br>eee8 <br> 8<br>8eee";
-digits.three = "eeee <br> &nbsp;&nbsp;&nbsp;8<br>&nbsp;&nbsp;&nbsp;8<br>eee8<br>&nbsp;&nbsp;&nbsp;88<br>eee88";
+digits.one = "&nbsp;&nbsp;&nbsp;88<br />&nbsp;&nbsp;&nbsp;&nbsp;8<br />&nbsp;&nbsp;&nbsp;&nbsp;8<br />&nbsp;&nbsp;&nbsp;&nbsp;8<br />&nbsp;&nbsp;&nbsp;8888<br />&nbsp;&nbsp;&nbsp;8888";
+digits.two = "&nbsp;&nbsp;&nbsp;eeee<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 <br>&nbsp;&nbsp;&nbsp;eee8 <br>&nbsp;&nbsp;&nbsp;8<br>&nbsp;&nbsp;&nbsp;8eee";
+digits.three = "&nbsp;&nbsp;eeee <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8<br>&nbsp;&nbsp;eee8<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88<br>&nbsp;&nbsp;eee88";
 digits.four = "88&nbsp;<br>88<br>88&nbsp;&nbsp;88&nbsp;<br>88ee88&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;88&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;88";
-digits.five = "eeeee <br>8 <br>8eeee <br>&nbsp;&nbsp;&nbsp;&nbsp;8 <br>&nbsp;&nbsp;&nbsp;&nbsp;8 <br>eeee8";
-digits.six = "eeee <br>8&nbsp;&nbsp;8 <br>8 <br>8eeee <br>8&nbsp;&nbsp;&nbsp;8 <br>8eee8";
-digits.seven = "eeeee <br>8&nbsp;&nbsp;&nbsp;8 <br>&nbsp;&nbsp;&nbsp;e&rsquo; <br>&nbsp;&nbsp;e&rsquo; <br>&nbsp;&nbsp;8 <br>&nbsp;&nbsp;8  ";
+digits.five = "&nbsp;&nbsp;eeeee <br>&nbsp;&nbsp;8 <br>&nbsp;&nbsp;8eeee <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 <br>&nbsp;&nbsp;eeee8";
+digits.six = "&nbsp;eeee&nbsp; <br>&nbsp;8&nbsp;&nbsp;8&nbsp; <br>&nbsp;8&nbsp; <br>&nbsp;8eeee&nbsp; <br>&nbsp;8&nbsp;&nbsp;&nbsp;8&nbsp; <br>&nbsp;8eee8";
+digits.seven = "&nbsp;&nbsp;eeeee <br>&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;8 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e&rsquo; <br>&nbsp;&nbsp;&nbsp;&nbsp;e&rsquo; <br>&nbsp;&nbsp;&nbsp;&nbsp;8 <br>&nbsp;&nbsp;&nbsp;&nbsp;8  ";
 digits.eight = "&nbsp;eeeee <br>&nbsp;8&nbsp;&nbsp;&nbsp;8 <br>&nbsp;8eee8 <br>88&nbsp;&nbsp;&nbsp;88 <br>88&nbsp;&nbsp;&nbsp;88 <br>88eee88";
-digits.nine = "eeeee <br>8&nbsp;&nbsp;&nbsp;8 <br>8eee8 <br>&nbsp;&nbsp;&nbsp;88 <br>&nbsp;&nbsp;&nbsp;88 <br>&nbsp;&nbsp;&nbsp;88";
+digits.nine = "&nbsp;&nbsp;eeeee <br>&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;8 <br>&nbsp;&nbsp;8eee8 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88";
 digits.zero = "&nbsp;eeeee <br>&nbsp;8&nbsp;&nbsp;08 <br>&nbsp;8&nbsp;&nbsp;&nbsp;8 <br>&nbsp;8&nbsp;&nbsp;&nbsp;8 <br>88&nbsp;&nbsp;&nbsp;88 <br>88eee88";
 digits.colon = "<br><br>88<br><br>88";
 
