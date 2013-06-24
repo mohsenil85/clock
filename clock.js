@@ -1,3 +1,6 @@
+//ok, our gross massive digits object, with fields for our html.  I know this looks insane, but basically i copied the
+// http://www.kammerl.de/ascii/AsciiSignature.php i think the font was called 'computer', and then search and replaced for eg s/ /&nbsp; etc.  getting all 
+//letters the same width took some trickery, but really this was not all that difficult.  it just looks bizzare and stupid, which it is
 var digits = new Object();
 digits.one = "&nbsp;&nbsp;&nbsp;88<br />&nbsp;&nbsp;&nbsp;&nbsp;8<br />&nbsp;&nbsp;&nbsp;&nbsp;8<br />&nbsp;&nbsp;&nbsp;&nbsp;8<br />&nbsp;&nbsp;&nbsp;8888<br />&nbsp;&nbsp;&nbsp;8888";
 digits.two = "&nbsp;&nbsp;&nbsp;eeee<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 <br>&nbsp;&nbsp;&nbsp;eee8 <br>&nbsp;&nbsp;&nbsp;8<br>&nbsp;&nbsp;&nbsp;8eee";
@@ -11,6 +14,8 @@ digits.nine = "&nbsp;&nbsp;eeeee <br>&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;8 <br>&nbsp;
 digits.zero = "&nbsp;eeeee <br>&nbsp;8&nbsp;&nbsp;08 <br>&nbsp;8&nbsp;&nbsp;&nbsp;8 <br>&nbsp;8&nbsp;&nbsp;&nbsp;8 <br>88&nbsp;&nbsp;&nbsp;88 <br>88eee88";
 digits.colon = "<br><br>88<br><br>88";
 
+//ugly, massive case switch so that I can access the different parts of the digits object.  is there a better way to do this?  i bet
+//however, this works (i think)
 function showDigits(x) {
 	switch (x){
 		case '1':
@@ -47,13 +52,14 @@ function showDigits(x) {
 		return digits.colon;
 		break;
 		default:
-	//`	document.write('blo');
-	break;
-}
+		break;
+	}
 }
 
 
 function displayTime(){
+	//the reason i split this up into tables for the digits was so that i could reach in a modify each
+	//element in the table directly. can't you use jquery or somehting like that?  i don't know 
 	var docHours1 = document.getElementById("hours1");
 	var docHours2 = document.getElementById("hours2");
 	var docMin1 = document.getElementById("minutes1");
@@ -62,11 +68,13 @@ function displayTime(){
 	var docSec2 = document.getElementById("seconds2");
 	var docColon = document.getElementById("colon");
 	var docColon2 = document.getElementById("colon2");
-	var now = new Date();
-	var currentHours = now.getHours() + '';
-	var currentMinutes = now.getMinutes() + '';
+	var now = new Date();//make a date object every second, in conjunction with the setTimeout below
+	var currentHours = now.getHours() + '';//convert the various fields in the date object to string so that they are easy to pass
+	var currentMinutes = now.getMinutes() + '';// in to the ginormous switch statement above. 
 	var currentSeconds = now.getSeconds() + '';
 
+
+	//various massageings of the time strings so that the clock is 12hr, and also if there is a 1 digit field, it has a leading zero
 	if (currentSeconds < 10) {
 		currentSeconds = '0' + currentSeconds;
 	}
@@ -85,34 +93,22 @@ function displayTime(){
 		currentHours = '0' + currentHours;
 	}
 
-	var hours1 = showDigits(currentHours.charAt(0));
-	var hours2 = showDigits(currentHours.charAt(1));
-
-	var minutes1 = showDigits(currentMinutes.charAt(0));
-	var minutes2 = showDigits(currentMinutes.charAt(1));
-
-	var seconds1 = showDigits(currentSeconds.charAt(0));
-	var seconds2 = showDigits(currentSeconds.charAt(1));
-
+	//dump that shit in the table!
 	docColon.innerHTML = digits.colon;
 	docColon2.innerHTML = digits.colon;
-	docHours1.innerHTML = hours1;
-	docHours2.innerHTML = hours2;
-	docMin1.innerHTML = minutes1;
-	docMin2.innerHTML = minutes2;
-	docSec1.innerHTML = seconds1;
-	docSec2.innerHTML = seconds2;
 
-/*
-	docHours1.innerHTML = digits.nine;
-	docHours2.innerHTML = digits.seven;
-	docMin1.innerHTML = digits.eight;
-	docMin2.innerHTML = digits.zero;
-	docSec1.innerHTML = digits.five;
-	docSec2.innerHTML = digits.six;
-*/
+	docHours1.innerHTML = showDigits(currentHours.charAt(0));
+	docHours2.innerHTML = showDigits(currentHours.charAt(1));
+	docMin1.innerHTML = showDigits(currentMinutes.charAt(0));
+	docMin2.innerHTML = showDigits(currentMinutes.charAt(1));
+	docSec1.innerHTML = showDigits(currentSeconds.charAt(0));
+	docSec2.innerHTML = showDigits(currentSeconds.charAt(1));
+
+	//run that shit every second!
 	setTimeout(displayTime, 1000);
+
 }
 
 
+//miller time
 window.onload = displayTime;

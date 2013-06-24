@@ -1,15 +1,11 @@
 @charset 'utf-8';
 * {
-	font: bold 7pt;
-	font-family: monospace;
+	font: bold 6pt;
+	font-family: monospace; 
 	background: #16161D;
 	color: #33ff33;
 }
 
-h1{
-	
-	font: bold 7pt;
-}
 #titlebar{
 	text-align: center; 
 	width: 650px ;
@@ -27,24 +23,13 @@ h1{
 #clock {
 
 	border-spacing: 10px;
-	/*font: bold 7pt sans; */
 	color: red;
 	background: #16161D;
 	padding: 10px;
-/*	border: solid #33ff33 5px; */
 	border-radius: 10px;
 
 }
 
-#colon {
+#colon, #colon2 {
 	text-decoration: blink;
 }
-#colon2 {
-	text-decoration: blink;
-}
-/*
-#clock{
-	text-align: left;
-	float: left;
-}
-*/
