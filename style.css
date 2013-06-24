@@ -2,7 +2,7 @@
 * {
 	font: bold 7pt;
 	font-family: monospace;
-	background: black;
+	background: #16161D;
 	color: #33ff33;
 }
 
@@ -29,7 +29,7 @@ border-spacing: 10px;
 border-spacing: 10px;
 	/*font: bold 7pt sans; */
 	color: red;
-	background: black;
+	background: #16161D;
 	padding: 10px;
 	border: solid #33ff33 5px;
 	border-radius: 10px;
