@@ -8,28 +8,19 @@ var digits = ["&nbsp;eeeee <br>&nbsp;8&nbsp;&nbsp;08 <br>&nbsp;8&nbsp;&nbsp;&nbs
 		"&nbsp;&nbsp;eeeee <br>&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;8 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e&rsquo; <br>&nbsp;&nbsp;&nbsp;&nbsp;e&rsquo; <br>&nbsp;&nbsp;&nbsp;&nbsp;8 <br>&nbsp;&nbsp;&nbsp;&nbsp;8  ",
 		"&nbsp;eeeee <br>&nbsp;8&nbsp;&nbsp;&nbsp;8 <br>&nbsp;8eee8 <br>88&nbsp;&nbsp;&nbsp;88 <br>88&nbsp;&nbsp;&nbsp;88 <br>88eee88",
 		"&nbsp;&nbsp;eeeee <br>&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;8 <br>&nbsp;&nbsp;8eee8 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88"
-]
-
-
+];
 var colon = "<br><br>88<br><br>88";
-
-$(document).ready(function() {
-
+$(function() {
 	function displayTime() {
-
 		var now = new Date()
 			.toLocaleTimeString()
 			.replace(/:|p|a|m| /gi, '');
 		var i = 0;
-
 		$('#colon, #colon2').html(colon);
-
 		for (i = 0; i < now.length; i++) {
 			$('#'+i).html(digits[now.charAt(i)]);
 		};
-
 		setTimeout(displayTime, 1000);
 	};
-
 	window.onload = displayTime;
 });
