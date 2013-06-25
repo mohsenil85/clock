@@ -25,21 +25,13 @@ $(document).ready(function(){
 	var currentSeconds = now.getSeconds() + '';
 
 
-	//various massageings of the time strings so that the clock is 12hr, and also if there is a 1 digit field, it has a leading zero
-	if (currentSeconds < 10) {
-		currentSeconds = '0' + currentSeconds;
-	}
+	currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
+	currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+	currentHours = (currentHours < 10 ? "0" : "") + currentHours;
+	currentHours = (currentHours > 12 ) ? currentHours - 12 : currentHours;
+	currentHours = (currentHours == 0 ) ?  12 : currentHours;
 
-	if (currentSeconds == 0) {
-		currentSeconds = '00';
-	}
 
-	if (currentMinutes < 10){
-		currentMinutes = '0' + currentMinutes;
-	}
-	if (currentHours > 12) {
-		currentHours -= 12;
-	}
 	if (currentHours < 10){
 		currentHours = '0' + currentHours;
 	}
