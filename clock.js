@@ -22,5 +22,5 @@ $(function() {
 		};
 		setTimeout(displayTime, 1000);
 	};
-	window.onload = displayTime;
+	displayTime();
 });
