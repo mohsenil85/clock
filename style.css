@@ -2,6 +2,9 @@
   background-color: red;
   color: blue;
 }
+.shown {
+  background-color: green;
+}
 /*
 @charset 'utf-8';
 * {
