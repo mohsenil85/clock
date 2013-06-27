@@ -10,7 +10,7 @@ $(function() {
 			.toString(2);
 		var i = 0;
 		for (i = now.length; i > 0; i--) {
-			$('#' + (39 - i)).html(digits[now.charAt(i)]);
+			$('#' + (33 - i)).html(digits[now.charAt(i)]);
 		};
 		setTimeout(displayTime, 1);
 	};
