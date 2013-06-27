@@ -5,8 +5,8 @@ $(function() {
 		var now = new Date()
 			.getTime()
 			.toString(2)
-      .substring(0,33);
-      //.split("").reverse().join("");
+      .substring(0,33)
+      .split("").reverse().join("");
 		var i = 0;
 		for (i = 0; i < now.length; i++) {
 			$('#test' + i).html('&nbsp;&nbsp;&nbsp;');
@@ -16,7 +16,7 @@ $(function() {
 			$('#test' + i).removeClass('hidden').addClass('shown');
       }
 		};
-		setTimeout(displayTime, 1);
+		setTimeout(displayTime, 20);
 	};
 	displayTime();
 });
