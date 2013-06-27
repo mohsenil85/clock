@@ -1,11 +1,10 @@
+@charset 'utf-8';
 .hidden {
-  background-color: red;
-  color: blue;
+  background-color: white;
 }
 .shown {
-  background-color: green;
+  background-color: gray;
 }
-/*
 @charset 'utf-8';
 * {
 	font: bold 6pt;
@@ -42,4 +41,3 @@
 	text-decoration: blink;
 }
 
-*/
