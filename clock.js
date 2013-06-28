@@ -9,11 +9,11 @@ $(function() {
       .split("").reverse().join("");
 		var i = 0;
 		for (i = 0; i < now.length; i++) {
-			$('#test' + i).html('&nbsp;&nbsp;&nbsp;');
+			$('#test' + i).html('<img src="./img/green4.png" />');
       if(now.charAt(i) === '0'){
-			$('#test' + i).addClass('hidden', 1, "easeOutCirc").removeClass('shown', 1, "easeOutCirc");
+			$('#test' + i).fadeOut("fast");
       } else {
-			$('#test' + i).removeClass('hidden').addClass('shown');
+			$('#test' + i).fadeIn("fast");
       }
 		};
 		setTimeout(displayTime, 2);

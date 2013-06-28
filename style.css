@@ -1,9 +1,9 @@
 @charset 'utf-8';
 .hidden {
-  background-color: white;
+  background-color: #16161D;
 }
 .shown {
-  background-color: gray;
+  background-color: #4BDB3D;
 }
 @charset 'utf-8';
 * {
