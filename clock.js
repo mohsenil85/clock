@@ -20,7 +20,7 @@ $(function() {
 		for (i = 0; i < now.length; i++) {
 			$('#'+i).html(digits[now.charAt(i)]);
 		};
-		setTimeout(displayTime, 1000);
+		setTimeout(displayTime, 2000);
 	};
 	displayTime();
 });
